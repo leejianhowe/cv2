@@ -2,7 +2,7 @@
   "name": "energy-calculator",
   "version": "1.0.0",
   "description": "savings calculator",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
