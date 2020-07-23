@@ -1,0 +1,350 @@
+body, html {
+  text-align: center;
+  height: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald';
+  font-weight: bold;
+  color: #1b262c;
+}
+
+.wrapper:hover .fa-stack {
+  color: #ed6663;
+  transition: 0.3s;
+  transform: rotateZ(90deg);
+}
+
+.wrapper {
+  display: flex;
+  width: 250px;
+  height: 66px;
+  /* border: 1px solid red; */
+  margin: 1%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.em-name {
+  color: #ed6663;
+}
+.assumptions{
+  text-align: left;
+}
+.button {
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: solid #1b262c;
+  color: #1b262c;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  margin: 0%;
+  cursor: pointer;
+  width: 250px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-right: 15px;
+}
+
+.button:hover {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#landing .container {
+  height: 100%;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heading {
+  margin: 0;
+  font-family: 'Finger Paint';
+  font-size: 3.5rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+p {
+  color: #000;
+  font-family: 'Open Sans';
+}
+
+.skill-row {
+  width: 50%;
+  display: inline-block;
+  margin: 50px auto;
+  line-height: 2;
+  text-align: left;
+}
+
+.skill-description {
+  overflow: auto;
+}
+
+.skill-header {}
+
+.image-left {
+  height: 25%;
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+
+.image-right {
+  height: 25%;
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+/* headings */
+.big-heading {
+  font-size: 3.5rem;
+  font-family: 'Finger Paint';
+  font-weight: 900;
+  line-height: 1.5;
+  padding: 5% 5% 5% 5%;
+  margin-bottom: 0;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Sections */
+.container-fluid {
+  padding: 7% 15%;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.coloured-section {
+  color: #fff;
+}
+
+/* Nav Bar */
+.navbar {
+  /* background-color: #000; */
+  background-color:rgba(0,0,0,0);
+  padding: 0;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
+  z-index: -1;
+}
+
+.transparent{
+  z-index: 1;
+}
+
+.navbar a{
+  color: black;
+}
+
+.navbar-brand {
+  font-family: 'Finger Paint';
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Oswald';
+}
+
+/* Title section */
+#title .container-fluid {
+  padding: 1% 15% 1%;
+  text-align: left;
+}
+
+/* title image */
+.profile-image {
+  width: 10%;
+  height: 10%;
+  border-radius: 100%
+}
+
+
+
+.icon {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1.5rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.featuresbox {
+  padding: 25px 0;
+}
+
+.feature-titles {
+  font-size: 1.5rem;
+}
+
+.about-me{
+  line-height: 1.5;
+  font-size: 1.3rem;
+  text-align: left;
+}
+/* Testimonials */
+#testimonials {
+  background-color: #ef8172;
+  /* position: relative; */
+}
+
+.testimonial-image {
+  border-radius: 100%;
+  width: 10%;
+  margin: 20px;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+
+/* Pricing section */
+#pricing {
+  padding: 5%;
+}
+
+.press-logo {
+  width: 10%;
+  margin: 20px 20px 50px 20px;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.footer {
+  font-size: 0.5rem;
+  display: inline-flex;
+}
+
+.about-me-row{
+  /* width: 50%; */
+  width: 950px;
+  height: 237px;
+  margin: 50px auto;
+
+
+}
+
+/* back to top button */
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Footer section */
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width:1024px) {
+  /* .icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+  } */
+}
+
+@media (max-width:1024px){
+  .navbar-brand{
+    font-size: 1.5rem;
+  }
+}
+
+/*newly added fo*/
+/* .container-fluid{
+  width: 100%;
+  text-align: left;
+} */
+
+/* .title, .sub-header{
+  text-align: center;
+}
+
+.label{
+  text-align: center;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+}
+a.navbar-brand{
+  margin:0;
+  padding:0;
+} */

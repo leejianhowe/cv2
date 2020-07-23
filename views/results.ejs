@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+
+
+  <title>Results</title>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <section class="coloured-section" id="title">
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Lee Jian Howe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/"id="home-button">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Portfolio
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="/calculator">Energy Calculator for AC</a>
+                <a class="dropdown-item">Others</a>
+              </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+<h1>Results</h1>
+
+<p>Type of system: <%= type %></p>
+<p>Tick Rating: <%= ticks %></p>
+<p>COP: <%= cop %></p>
+<p>
+  Cost of electricity: <%= elecCost %>
+</p>
+
+<p>Monthly electricity consumption: <%= monthlyElec %>kWh.</p>
+<p>Monthly cost: $<%= resultMonth %>.</p>
+
+<p>Yearly electricity consumption: <%= yearlyElec %>kWh.</p>
+<p>Yearly cost: $<%= resultYear %>.</p>
+
+
+<form action="/calculator">
+  <input type="submit" value="Back" />
+</form>
+
+
+<%- include('partials/footer') %>

@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+<title>Calculator for Aircon</title>
+
+
+</head>
+
+<body>
+  <h1 class="title">Cost of Air Conditioner usage</h1>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <p class="assumptions">Following assumptions are made:</p>
+        <p class="assumptions">
+          The cooling load is 12000 Btu/hr or 1 ton or 3.516kW. Coefficent of Performance(COP) is the minimum requiremnt to achieve for the type and tick rating from the NEA. Standby power consumed is negligible
+        </p>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <div class="calculatorAircon">
+            <form class="valuesCalculatorAircon" action="/calculator" method="post">
+              <label for="hours">Daily running hours(hrs):</label>
+              <input type="number " name="hours" autofocus value="8" autocomplete="off"><br>
+              <label for="elecCost">Cost of electricity(cents):</label>
+              <input type="number " name="elecCost" value="20.97" autocomplete="off"><br>
+
+              <label for="type" class="mr-sm-2">Type of AC:</label>
+              <select name="type" class="form-control custom-select mr-sm-2">
+                <option value="Casement and window">Casement and window</option>
+                <option value="Non-inverter">Non-inverter</option>
+                <option value="Inverter">Inverter</option>
+              </select>
+              <label for="ticks" class="mr-sm-2">Tick Rating:</label>
+              <select name="ticks" class="custom-select mr-sm-2">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <%- include('partials/footer') %>
