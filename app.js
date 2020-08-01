@@ -5,15 +5,19 @@ const querystring = require('querystring');
 const app = express()
 
 
-// app.use(express.static('public'))
+
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(express.static("public"));
 
+const currentYear = new Date().getFullYear();
+
 app.get("/", (req, res) => {
-  res.render('index')
+  res.render('index', {
+    currentYear: currentYear
+  })
 })
 
 app.get("/calculator", (req, res) => {
@@ -29,7 +33,7 @@ app.post("/calculator", (req, res) => {
   const type = req.body.type;
   let cop;
 
-  if(type === "Inverter"){
+  if (type === "Inverter") {
     switch (ticks) {
       case 2:
         cop = 3.34
@@ -46,7 +50,7 @@ app.post("/calculator", (req, res) => {
       default:
         cop = 2.90;
     }
-  }else{
+  } else {
     switch (ticks) {
       case 1:
         cop = 2.90

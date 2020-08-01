@@ -1,6 +1,7 @@
 body, html {
   text-align: center;
-  height: 100%
+  height: 100%;
+  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,35 +10,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #1b262c;
 }
 
-.wrapper:hover .fa-stack {
-  color: #ed6663;
-  transition: 0.3s;
-  transform: rotateZ(90deg);
+p {
+  color: #000;
+  font-family: 'Open Sans';
+  margin-bottom: 0;
 }
 
-.wrapper {
-  display: flex;
-  width: 250px;
-  height: 66px;
-  /* border: 1px solid red; */
-  margin: 1%;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+/* Landing Page */
 
-.em-name {
-  color: #ed6663;
-}
-.assumptions{
-  text-align: left;
-}
+/* landing page button */
 .button {
   background-color: Transparent;
   background-repeat: no-repeat;
-  border: solid #1b262c;
-  color: #1b262c;
+  border: solid #ed6663;
+
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -46,8 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   display: flex;
   font-size: 20px;
-  margin: 0%;
-  cursor: pointer;
+  margin: 0;
   width: 250px;
   align-items: center;
   justify-content: center;
@@ -59,45 +44,82 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #fff;
   border-color: #fff;
 }
+/* arrow animation */
+.wrapper:hover .fa-stack {
+  color: #ed6663;
+  transition: 0.3s;
+  transform: rotateZ(90deg);
 
-.bg {
-  /* The image used */
-  background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
-#landing .container {
-  height: 100%;
-  display: -webkit-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+.wrapper {
   display: flex;
-  -webkit-flex-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
+  width: 250px;
+  height: 66px;
+  /* border: 1px solid red; */
+  margin: 1%;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
   position: relative;
+    color: #ed6663;
 }
 
+.bg {
+  /* The image used */
+  /* background-image: url("https://imagesexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"); */
+  background-color: #1b262c;
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+#landing {
+  height: 100%;
+  /* display: -webkit-flexbox; */
+  /* display: -ms-flexbox; */
+  /* display: -webkit-flex; */
+  display: flex;
+  /* -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center; */
+  align-items: center;
+  /* justify-content: center; */
+  /* position: relative; */
+}
+
+/* Landing Page Text */
 .heading {
   margin: 0;
   font-family: 'Finger Paint';
   font-size: 3.5rem;
   line-height: 1.5;
   margin-bottom: 0;
+  color: #ed6663;
+}
+.em-name {
+  color: #ed6663;
 }
 
-p {
-  color: #000;
-  font-family: 'Open Sans';
+/* End of Landing Page */
+
+/* 3 features section */
+.icon {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 1.5rem;
 }
 
+.featuresbox {
+  padding: 25px 0;
+}
+
+
+/* End of 3 features section */
+
+/* Skills section */
 .skill-row {
   width: 50%;
   display: inline-block;
@@ -110,19 +132,17 @@ p {
   overflow: auto;
 }
 
-.skill-header {}
-
 .image-left {
-  height: 25%;
-  width: 25%;
+  height: 30%;
+  width: 30%;
   float: left;
   margin-right: 30px;
 }
 
 
 .image-right {
-  height: 25%;
-  width: 25%;
+  height: 30%;
+  width: 30%;
   float: right;
   margin-left: 30px;
 }
@@ -133,32 +153,30 @@ p {
   font-family: 'Finger Paint';
   font-weight: 900;
   line-height: 1.5;
-  padding: 5% 5% 5% 5%;
+  padding: 6% 0 2% 0;
   margin-bottom: 0;
 }
 
-.section-heading {
-  font-size: 3rem;
-  line-height: 1.5;
-}
+
 
 /* Sections */
 .container-fluid {
   padding: 7% 15%;
+
 }
 
 .white-section {
-  background-color: #fff;
+  background-color: #ed6663;
 }
 
-.coloured-section {
-  color: #fff;
+.coloured-section{
+  background-color: #ffa372;
 }
 
 /* Nav Bar */
 .navbar {
   /* background-color: #000; */
-  background-color:rgba(0,0,0,0);
+  /* background-color:rgba(0,0,0,0); */
   padding: 0;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
@@ -196,94 +214,8 @@ p {
   text-align: left;
 }
 
-/* title image */
-.profile-image {
-  width: 10%;
-  height: 10%;
-  border-radius: 100%
-}
 
-
-
-.icon {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 1.5rem;
-}
-
-.icon:hover {
-  color: #ff4c68;
-}
-
-.featuresbox {
-  padding: 25px 0;
-}
-
-.feature-titles {
-  font-size: 1.5rem;
-}
-
-.about-me{
-  line-height: 1.5;
-  font-size: 1.3rem;
-  text-align: left;
-}
-/* Testimonials */
-#testimonials {
-  background-color: #ef8172;
-  /* position: relative; */
-}
-
-.testimonial-image {
-  border-radius: 100%;
-  width: 10%;
-  margin: 20px;
-}
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-#press {
-  background-color: #ef8172;
-  padding-bottom: 3%;
-}
-
-/* Pricing section */
-#pricing {
-  padding: 5%;
-}
-
-.press-logo {
-  width: 10%;
-  margin: 20px 20px 50px 20px;
-}
-
-.pricing-col {
-  padding: 3% 2%;
-}
-
-.price-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.footer {
-  font-size: 0.5rem;
-  display: inline-flex;
-}
-
-.about-me-row{
-  /* width: 50%; */
-  width: 950px;
-  height: 237px;
-  margin: 50px auto;
-
-
-}
-
-/* back to top button */
+/* Back to TOP BUTTON */
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
@@ -308,43 +240,45 @@ p {
 .social-icon {
   margin: 20px 10px;
 }
+.footer {
+  font-size: 0.5rem;
+  display: inline-flex; /* makes the text inline*/
+}
+
+/* display format */
 
 @media (max-width:1024px) {
-  /* .icon {
+  .icon {
     width: 200px;
     height: 200px;
     margin-bottom: 1.5rem;
-  } */
-}
-
-@media (max-width:1024px){
+  }
   .navbar-brand{
-    font-size: 1.5rem;
+    font-size: 1.0rem;
   }
 }
 
-/*newly added fo*/
-/* .container-fluid{
-  width: 100%;
+@media (max-width:768px) {
+  .icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.0rem;
+  }
+  .skill-header{
+    font-size:1.5rem;
+  }
+  .big-heading{
+    font-size:2.5rem;
+  }
+  .nav-item {
+    font-size: 0.8rem;
+  }
+  .feature-titles{
+    font-size:1.25rem;
+  }
+}
+
+/* Calculator CSS */
+.assumptions{
   text-align: left;
-} */
-
-/* .title, .sub-header{
-  text-align: center;
 }
-
-.label{
-  text-align: center;
-}
-
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  height: 50%;
-}
-a.navbar-brand{
-  margin:0;
-  padding:0;
-} */
